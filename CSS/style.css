@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+    ), url("../images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #a5bba8;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #88afb9;
+}
+
+main {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #e1e5eb;
+}
+
+h1 {
+    font-size: 26px;
+    margin-top: 0;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px 5px 5px 0;
+    color: white;
+    background-color: #7990ab;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #405978;
+}
+
+.demo-image {
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.panel {
+    padding: 30px;
+    background-color: #dceafa;
+    border-radius: 5px;
+}
+
+#items li {
+    margin: 8px 0;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.animation-area {
+    min-height: 300px;
+    padding: 12px;
+    border: 1px solid #d6dbe1;
+    margin-bottom: 15px;
+}
+
+.square {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    background-color: #43d2bd;
+}
+
+.accordion-title {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0 0;
+}
+
+.accordion-panel {
+    display: none;
+    padding: 15px;
+    background-color: #e7eef7;
+    border-radius: 0 0 5px 5px;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+}
